@@ -16,13 +16,16 @@
  */
 #include<bits/stdc++.h>
 using namespace std;
-int main()
+fastio()
 {
     ios_base::sync_with_stdio(false);           //This will help clear
     cin.tie(0);                                 //the cin and cout
     cout.tie(0);                                //buffer and generate multiple
     cin.exceptions(ios::badbit | ios::failbit); //outputs together at the end.
-    freopen("LS_input.txt", "r", stdin);
+}
+int main()
+{
+    fastio();
     int t; // No. of Test Cases
     cin >> t;
     while(t--)
@@ -58,3 +61,19 @@ int main()
     return 0;
 }
 // Overall complexity of the Program is O(n).
+/*
+Test Cases
+4
+5
+1 2 3 4 5
+4
+10
+10 20 30 40 50 60 70 80 90 100
+55
+6
+39 41 97 113 198 21
+21
+50
+64 23 38 67 22 25 87 45 28 40 27 39 21 30 64 6 93 25 8 38 1 74 40 50 50 30 30 68 40 14 79 50 4 76 51 57 11 94 91 50 20 44 51 79 41 10 86 2 36 40
+45
+*/
